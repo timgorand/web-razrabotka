@@ -4,7 +4,7 @@ import ToDoForm from "./AddTask";
 import ToDo from "./Task";
 import axios from 'axios';
 
-const STORAGE_KEY = 'space-tasks-data';
+const STORAGE_KEY = 'finance_todos_data';
 
 function App() {
   const [gold_price, get_gold_price] = useState('Загрузка, подождите...');
@@ -22,7 +22,7 @@ function App() {
         get_gold_price('Ошибка данных.');
       }
       try {
-      const crypt = await axios.get('https://api.coingecko.com/api/v3/simple/price?vs_currencies=usd&ids=Ethereum')
+      const crypt = await axios.get('https://api.coingecko.com/api/v3/simple/price?vs_currencies=usd&ids=Ethereum');
       get_eth_price(`$${crypt.data.ethereum.usd}`);
       } catch (err) {
       	get_eth_price('Ошибка данных, нет связи с сервером.');
@@ -100,4 +100,3 @@ function App() {
   );
 }
 
-export default App;

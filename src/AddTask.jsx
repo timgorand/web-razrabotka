@@ -20,16 +20,16 @@ const ToDoForm = ({ addTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="stonks-form">
+    <form onSubmit={handleSubmit} className="stonks_form">
       <input
         value={inputValue}
         type="text"
         onChange={handleChange}
         onKeyDown={handleKeyPress}
         placeholder="Следующая цель..."
-        className="stonks-input"
+        className="stonks_input"
       />
-      <button className="stonks-button">Запуск</button>
+      <button className="stonks_button">Записать</button>
     </form>
   );
 };
