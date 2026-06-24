@@ -1,0 +1,89 @@
+#root {
+  min-height: 100vh;
+  background-image: url("assets/phon.jpg");
+  background-size: cover;
+  color: #c9d1d9;
+  font-family: 'Inter', -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard { 
+  order: -2; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.main-header { 
+  order: -1; 
+  margin-top: 0;
+}
+
+.task-section { order: 1; }
+
+.widget {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.widget-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #8b949e;
+  margin-bottom: 0.4rem;
+}
+
+.widget-value {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+  color: #e6edf3;
+}
+
+.w_metal {
+	font-weight: 600;
+	background-color: #e3b200;
+	color: #FFFFFF;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.w_crypt {
+	font-weight: 600;
+	background-color: #a729f0;
+	color: #FFFFFF;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.todo-list {
+	background-size: cover;
+	font-weight: 600;
+	background-color: #a729f0;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.stonks_todoer {
+	background-color: rgba(12, 77, 62, 0.9);
+	width: 500px;
+	margin-left: 250px;
+	height: 50px;
+	border-radius: 20px;
+}
