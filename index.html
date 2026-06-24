@@ -6,8 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>to_do_lister</title>
   </head>
-  <body>
-    <div id="root"></div>
+  <body link rel="stylesheet" href="App.css">
+    <div id="root">
+      <div className="App">
+      <div className='dashboard'>
+        <div className='widget w_metal'>
+          <h3>Курс золота 999 пробы</h3>
+			<p>{gold_price}</p>
+        </div>
+          <div className="widget w_crypt">
+            <h3>Курс эфириума (ETH)</h3>
+			<p>{eth_price}</p>
+          </div>
+      </div>
+      
+      <header>
+        <h1>Финансовые задачи: {todos.length}</h1>
+      </header>
+      <ToDoForm addTask={addTask} />
+      {todos.map((todo) => (
+        <ToDo
+          todo={todo}
+          key={todo.id}
+          toggleTask={handleToggle}
+          removeTask={removeTask}
+        />
+    </div>
     <script type="module" src="/src/App.jsx"></script>
   </body>
 </html>
