@@ -1,1 +1,1 @@
-https://slick-hornets-build.loca.lt/
+https://nasty-onions-hammer.loca.lt/
