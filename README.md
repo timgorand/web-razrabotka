@@ -1,1 +1,1 @@
-https://timgorand.github.io/web-razrabotka/
+https://slick-hornets-build.loca.lt/
